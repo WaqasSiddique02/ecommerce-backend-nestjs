@@ -3,6 +3,7 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { UsersModule } from './users/users.module';
 import { TypeOrmModule } from '@nestjs/typeorm';
+import { CategoryModule } from './category/category.module';
 
 @Module({
   imports: [TypeOrmModule.forRoot({
@@ -19,7 +20,7 @@ import { TypeOrmModule } from '@nestjs/typeorm';
       "trustServerCertificate": true
     }
   }
-}),UsersModule],
+}),UsersModule, CategoryModule],
   controllers: [AppController],
   providers: [AppService],
 })
