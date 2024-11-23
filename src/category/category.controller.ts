@@ -4,7 +4,7 @@ import { ApiBody, ApiTags } from '@nestjs/swagger';
 import { title } from 'process';
 
 @Controller('category')
-@ApiTags('categories')
+@ApiTags('Categories')
 export class CategoryController {
     constructor(private readonly categoryService:CategoryService){}
 
